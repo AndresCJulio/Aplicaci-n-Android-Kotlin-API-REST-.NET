@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ===================================== -->
+    <!-- [4.7 / 4.8] BARRA SUPERIOR CON FLECHA PARA VOLVER (reemplaza al botón VOLVER APPS) -->
+    <!-- ===================================== -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarParImpar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationContentDescription="Volver"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Par o Impar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Validar número Par o Impar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese un número"
+            android:inputType="numberSigned"/>
+
+        <Button
+            android:id="@+id/btnValidar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALIDAR"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

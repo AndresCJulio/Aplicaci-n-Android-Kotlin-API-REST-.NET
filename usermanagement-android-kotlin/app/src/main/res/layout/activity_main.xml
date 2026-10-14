@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ===================================== -->
+    <!-- [4.6] BARRA SUPERIOR: ÍCONO DE CERRAR SESIÓN (reemplaza al botón grande Cerrar sesión) -->
+    <!-- ===================================== -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/menu_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- [4.5] Saludo personalizado (ya existía en el proyecto base, sin cambios de lógica) -->
+        <TextView
+            android:id="@+id/tvSaludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#4A424D"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btnParImpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio Par o Impar" />
+
+    </LinearLayout>
+
+</LinearLayout>
